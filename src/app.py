@@ -1,12 +1,14 @@
-from abc import ABC, abstractmethod
 import random
 import string
+from abc import ABC, abstractmethod
 
 import nltk
 
 nltk.download('words')
 
 class PasswordGenerator(ABC):
+    """Abstract class to be a template to implement project
+    """
     
     @abstractmethod
     def generate(self):
@@ -14,6 +16,8 @@ class PasswordGenerator(ABC):
     
 
 class PinGenerator(PasswordGenerator):
+    """PIN password generator class
+    """
     
     def __init__(self, length):
         self.pin_length = length
@@ -23,6 +27,8 @@ class PinGenerator(PasswordGenerator):
 
 
 class RandomPasswordGenerator(PasswordGenerator):
+    """Generate random character base password
+    """
     
     def __init__(self, length:int = 8, is_num:bool = False, is_symbol:bool = False):
         self.length = length
@@ -40,6 +46,7 @@ class RandomPasswordGenerator(PasswordGenerator):
         
 
 class MemorablePasswordGenerator(PasswordGenerator):
+    """Generate password that can be remember base on meaning full words"""
     
     def __init__(self, num_of_words:int = 5,
                  separator:str = '-',
