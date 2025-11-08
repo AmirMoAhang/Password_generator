@@ -53,12 +53,3 @@ def GenerateMemorablePassword(num_of_words:int = 4, seprator:str = '-', cap:bool
         pass_words = [word.capitalize() for word in pass_words]
 
     return seprator.join(pass_words)
-
-
-
-
-
-
-
-
-
