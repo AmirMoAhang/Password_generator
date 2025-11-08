@@ -19,7 +19,7 @@ class PinGenerator(PasswordGenerator):
     """PIN password generator class
     """
     
-    def __init__(self, length):
+    def __init__(self, length:int = 8):
         self.pin_length = length
     
     def generate(self):
