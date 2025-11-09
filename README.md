@@ -1,5 +1,7 @@
 # Password_generator
 
+![gif](./src/Streamlit/images/vid.gif)
+
 Welcome to the Password Generator project coded by python. Project implemented by both OOP approach and functional approach. A gui is created for this project based on streamlit.
 
 
