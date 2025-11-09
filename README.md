@@ -1,6 +1,6 @@
 # Password_generator
 
-Welcome to the Password Generator project coded by python. Project implemented by both OOP approach and functional approach. Soon we create a gui based on streamlit for it.
+Welcome to the Password Generator project coded by python. Project implemented by both OOP approach and functional approach. A gui is created for this project based on streamlit.
 
 
 The password generator creates:
@@ -21,8 +21,10 @@ The password generator uses Python's `random` and `string` modules to generate p
 
 - Python 3.7+
 - NLTK (Natural Language Toolkit)
+- streamlit
+- pyperclip
 
-To install NLTK, use pip:
+To install **NLTK**, use pip:
 
 ```bash
 pip install nltk
@@ -35,6 +37,13 @@ import nltk
 nltk.download('words')
 ```
 
+to install **streamlit** and **pyperclip** use pip:
+
+```bash
+pip install streamlit
+pip install pyperclip
+```
+
 ## Running the Project
 
 Ensure that you have all the required dependencies installed. You can then set your `PYTHONPATH`, navigate to the 'src' directory and run the project using the following commands:
@@ -42,6 +51,11 @@ Ensure that you have all the required dependencies installed. You can then set y
 ```bash
 export PYTHONPATH="${PYTHONPATH}:/your/path/to/main/directory/src"
 python src/Functional_approach/main.py
+```
+
+If you want to experience GUI, you can run `run.py` file in `src/streamlit` with sreamlit as below:
+```bash
+streamlit run run.py
 ```
 
 
